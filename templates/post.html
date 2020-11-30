@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+
+{% block titulo %}
+    {{detalle_post.titulo}}
+{% endblock titulo %}
+    
+{% block imagen-fondo %}
+    {{detalle_post.imagen}}
+{% endblock imagen-fondo %}
+
+{% block titulo2 %}
+    {{detalle_post.titulo}}
+{% endblock titulo2 %}
+{% block descripcion %}
+    <span class="subheading">{{detalle_post.descripcion}}</span>
+{% endblock descripcion %}
+
+{% block contenido %}
+    {{detalle_post.contenido | safe}}
+{% endblock contenido %}
